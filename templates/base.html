@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% block css %}
+	{% endblock %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+	<script src="https://kit.fontawesome.com/8f7d2474b3.js" crossorigin="anonymous"></script>
+	<title>Matt Baum - Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div>
+                <h1><a href="">Matt Baum</a></h1>
+                <h2>Full Stack Web Developer (Not yet)</h2>
+                
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Interests</a></li>
+					<li><a href="#">GitHub</a></li>
+					<li><a href="#">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+    <section>
+	{% block main %}
+	{% endblock %}
+
+    </section>
+
+    <footer>
+        <ul class="social-container">
+            <li><a href="https://www.linkedin.com/in/matt-baum-0101/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/mattbaum666/?hl=en" target="_blank"><i class="fab fa-instagram instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/matt.m.baum/" target="_blank"><i class="fab fa-facebook-f facebook"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
